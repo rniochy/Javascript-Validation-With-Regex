@@ -14,7 +14,8 @@ function main(){
     useremail.addEventListener("change", (e)=>{
         const uEmail = e.target.value;
 
-        if(`${uEmail}`.match(REGEXUSERNAME)){
+        if(`${uEmail}`.match(REGEXUSEREMAIL)){
+            console.log("IS WORKING")
                 removeClass(useremail ,"invalidInput");
         } else {
             removeClass(useremail ,"validInput");
