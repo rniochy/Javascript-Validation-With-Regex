@@ -10,7 +10,7 @@ function removeClass(node, className){
     node.removeAttribute('class');
     node.setAttribute('class', className);
 }
-function main(){
+function validateEmail (){
     useremail.addEventListener("change", (e)=>{
         const uEmail = e.target.value;
 
@@ -20,8 +20,9 @@ function main(){
         } else {
             removeClass(useremail ,"validInput");
         }
-
     })
+}
+function validateUserName(){
     username.addEventListener("change", (e)=>{
         const uName = e.target.value;
 
@@ -31,9 +32,12 @@ function main(){
             removeClass(username ,"validInput");
         }
     })
-    userpassword.addEventListener("change", (e)=>{
-          
+    userpassword.addEventListener("change", (e)=>{     
     })
+}
+function main(){
+    validateEmail();
+    validateUserName();
         
 }
 
